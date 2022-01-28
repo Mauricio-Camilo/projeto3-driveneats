@@ -124,6 +124,12 @@ footer {
     left:0;
 }
 
+.barrainferior {
+  /*  background-color: blue; */
+}
+
+
+
 .pedido {
     background-color: #CBCBCB;
     height: 61px;
@@ -135,12 +141,24 @@ footer {
     border-radius: 50px;
 }
 
+.ativado {
+    background-color:#32B72F;
+}
+
+.clicar {
+    background-color:blue;
+}
 .pedido p {
     font-family: roboto;
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
 }
+
+.escondido {
+    display: none;
+}
+
 
 @media (max-width: 614px) {
        /* Comando para ocultar a scrollbar */
