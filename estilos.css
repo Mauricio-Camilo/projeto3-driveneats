@@ -68,14 +68,15 @@ section {
 /* Descrição de um prato */
 
 article {
+ /*   box-sizing:content-box; */
     background-color: #FFFFFF;
     margin-left: 16px;
     padding-top: 18px;
     padding-left: 14px; 
     padding-right: 14px;
+    padding-bottom: 13px; 
     width: 176px;
     height: 214px;
-    padding-bottom: 13px;
     border-radius: 9px;
 }
 
@@ -90,7 +91,7 @@ article img {
     font-weight: 700;
     font-size: 16px;
     margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
     color: #333333;
 }
 
@@ -102,12 +103,25 @@ article img {
     color: #A6A6A6;
 }
 
+.preco-check {
+    display: flex;
+    align-items: center;
+    margin-top: 12px; 
+    justify-content: space-between;
+}
+
 .preco {
     font-family: roboto;
     font-weight: 400;
     font-size: 16px;
-     margin-top: 14px;
+ /*  margin-top: 14px; */
     color: #000000;
+}
+
+.icone-check {
+    font-size: 20px;
+    color: #32B72F; 
+
 }
 
 /* Barra inferior da página */
@@ -159,7 +173,13 @@ footer {
     display: none;
 }
 
+.bordaverde {
+    box-shadow: inset 0px 0px 0px 5px #32B72F;
+}
 
+.fundoazul {
+    background-color: blue;
+}
 @media (max-width: 614px) {
        /* Comando para ocultar a scrollbar */
     ::-webkit-scrollbar {
