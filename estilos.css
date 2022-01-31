@@ -169,6 +169,78 @@ footer {
     color: #FFFFFF;
 }
 
+.confirmacao {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+}
+
+    .confirmacao-janela {
+        display: flex;
+        flex-direction: column; 
+        width: 377px;
+        height: 353px;
+        background-color:#50D074;
+        padding-top: 21px;
+        border-radius: 9px;
+
+    }
+
+    .confirmacao-texto {
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 22px;
+        margin: 0 auto;
+        margin-bottom: 28px;
+    }
+
+    .branca {
+        color: white;
+     }
+
+    .confirmacao-botao {
+        background-color: white;
+        border-radius: 100px;
+        color: #50D074;
+        width: 329px;
+        height: 52px;
+        border: white;
+        margin: 20px auto;
+    }
+
+    
+    .confirmacao-botao-texto {
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .confirmacao-pratos {
+        font-family: roboto;
+        font-weight: 400;
+        font-size: 22px;
+        margin-bottom: 13px;
+        color: white;
+    }
+
+.confirmacao-alinhamento {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px;
+
+}
+
+.botao-cancelar {
+    background-color: none;
+}
+
 .escondido {
     display: none;
 }
@@ -177,9 +249,7 @@ footer {
     box-shadow: inset 0px 0px 0px 5px #32B72F;
 }
 
-.fundoazul {
-    background-color: blue;
-}
+
 @media (max-width: 614px) {
        /* Comando para ocultar a scrollbar */
     ::-webkit-scrollbar {

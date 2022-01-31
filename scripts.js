@@ -133,16 +133,48 @@ function calcularPreco() {
     num3 = num3.replace(",", ".");
 
     soma = parseFloat(num1) + parseFloat(num2) + parseFloat(num3);
+    soma = soma.toFixed(2).replace(".", ",");
 
    return soma;
 }
 
+function confirmarPedido() {
+
+
+    calcularPreco();
+
+    // Comandos para mostrar a barra de confirmação
+
+    let pedido = document.querySelector(".confirmacao");
+    pedido.classList.remove("escondido"); 
+
+    // Envia os valores dentro do JS para o HTML
+
+    document.getElementById("comida").innerHTML = array[0];
+    document.getElementById("precocomida").innerHTML = array[1];
+    document.getElementById("bebida").innerHTML = array[2];
+    document.getElementById("precobebida").innerHTML = array[3];
+    document.getElementById("sobremesa").innerHTML = array[4];
+    document.getElementById("precosobremesa").innerHTML = array[5];
+    document.getElementById("precototal").innerHTML = "R$ " + soma;
+
+}
+
+function recomeçar() {
+    let pedido = document.querySelector(".confirmacao");
+    pedido.classList.add("escondido"); 
+}
+
 function enviarMensagem() {
+
+    const nomeUsurario = prompt ("Escreva seu nome")
+    const enderecoUsurario = prompt ("Escreva seu endereço")
+
 
     calcularPreco();
 
 
-    textoMensagem = "Olá, gostaria de fazer o pedido: - Prato: " + array[0] + " - Bebida: " + array[2] + " - Sobremesa: " + array[4] + " Total: R$ " + soma;
+    textoMensagem = "Olá, gostaria de fazer o pedido: - Prato: " + array[0] + " - Bebida: " + array[2] + " - Sobremesa: " + array[4] + " Total: R$ " + soma + " Nome: " + nomeUsurario + " Endereço: " + enderecoUsurario;
     window.open(`https://wa.me/5511972665730?text=${encodeURIComponent(textoMensagem)}`);
 
     /* const fundo = document.querySelector (".ativado");
