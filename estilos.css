@@ -55,20 +55,22 @@ header span {
     font-size: 26px;
 }
 
-/* Comando para ocultar a scrollbar */
+/* Seção de prato/bebida/sobremesa */
 
 section {
     width: 100%;
     padding-left: 3px; 
     display: flex;
+
+/* Comando para ocultar a scrollbar */
+
     overflow-x: scroll;
     scrollbar-width: none;
 }
 
-/* Descrição de um prato */
+/* Descrição de cada prato/bebida/sobremesa */
 
 article {
- /*   box-sizing:content-box; */
     background-color: #FFFFFF;
     margin-left: 16px;
     padding-top: 18px;
@@ -78,6 +80,7 @@ article {
     width: 176px;
     height: 214px;
     border-radius: 9px;
+    position: relative;
 }
 
 article img {
@@ -114,14 +117,15 @@ article img {
     font-family: roboto;
     font-weight: 400;
     font-size: 16px;
- /*  margin-top: 14px; */
     color: #000000;
 }
 
 .icone-check {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
     font-size: 20px;
     color: #32B72F; 
-
 }
 
 /* Barra inferior da página */
@@ -137,12 +141,6 @@ footer {
     bottom:0;
     left:0;
 }
-
-.barrainferior {
-  /*  background-color: blue; */
-}
-
-
 
 .pedido {
     background-color: #CBCBCB;
@@ -169,6 +167,8 @@ footer {
     color: #FFFFFF;
 }
 
+/* Página de confirmação */
+
 .confirmacao {
     position: fixed;
     width: 100%;
@@ -190,7 +190,6 @@ footer {
         background-color:#50D074;
         padding-top: 21px;
         border-radius: 9px;
-
     }
 
     .confirmacao-texto {
@@ -234,7 +233,6 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 0 26px;
-
 }
 
 .botao-cancelar {
@@ -249,20 +247,9 @@ footer {
     box-shadow: inset 0px 0px 0px 5px #32B72F;
 }
 
-
 @media (max-width: 614px) {
        /* Comando para ocultar a scrollbar */
     ::-webkit-scrollbar {
         width: 0px;
     }     
-}
-@media (min-width: 614px) {
-
-    main {
-    /*   background: blue; */
-    }
-
-    section {
-      /*  overflow-x: scroll;  */
-    }
 }
