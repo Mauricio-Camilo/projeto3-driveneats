@@ -65,7 +65,7 @@ section {
 /* Comando para ocultar a scrollbar */
 
     overflow-x: scroll;
-    scrollbar-width: none;
+  /*  scrollbar-width: none; */
 }
 
 /* Descrição de cada prato/bebida/sobremesa */
@@ -247,8 +247,9 @@ footer {
     box-shadow: inset 0px 0px 0px 5px #32B72F;
 }
 
+/* Comando para ocultar a scrollbar */
+
 @media (max-width: 614px) {
-       /* Comando para ocultar a scrollbar */
     ::-webkit-scrollbar {
         width: 0px;
     }     
