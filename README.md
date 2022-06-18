@@ -4,7 +4,11 @@ An easy way to order your food and it will be delivered within 6 minutes.
 
 ## About
 
-This website allows you to easily choose your combo (drink, food, dessert), then send the order by WhatsApp directly to the restaurant.
+This website allows you to easily choose your combo (drink, food, dessert), then send the order by WhatsApp directly to the restaurant. Below are the implemented features:
+
+- Dynamic options choice
+- Responsive layout
+- Send the message via whatsapp
 
 ## Technologies
 
